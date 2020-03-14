@@ -5,6 +5,6 @@ account: vnbcs
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 1948618
-bundleId: 2881117
+bundleId: 2881184
 url: https://vnbcs.shinyapps.io/book_rec_app/
-when: 1584196537.18045
+when: 1584198728.49796
