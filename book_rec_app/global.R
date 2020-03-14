@@ -3,6 +3,8 @@ library(googlesheets4)
 library(DT)
 library(shinythemes)
 
+sheets_deauth()
+
 books <- read_sheet("https://docs.google.com/spreadsheets/d/1bwDA91Ch6oTBViFq5jzjRA1jLIe2CfVf80KAF2uj08w/edit", 
                     sheet="Book recommendations")
 names(books)[names(books)=="Link? (Google Books/Goodreads preferred)"] <- "Link"
