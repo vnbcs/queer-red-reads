@@ -1,0 +1,10 @@
+name: book_rec_app
+title:
+username:
+account: vnbcs
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1948618
+bundleId: 2881117
+url: https://vnbcs.shinyapps.io/book_rec_app/
+when: 1584196537.18045
