@@ -9,15 +9,17 @@ navbarPage("QUEER RED READS",
                       "Coming soon!")),
            
            tabPanel("Reading list",
-                    mainPanel(DT::dataTableOutput("table"))),
+                    mainPanel(DT::dataTableOutput("table"), fillContainer = TRUE)),
            
            tabPanel("Suggest a work", 
-                    mainPanel(
+                    fluidPage(
+                      fluidRow(column(12,
                       tags$iframe(id = "googleform",
                                   src = "https://docs.google.com/forms/d/e/1FAIpQLSd_fTgcuiUw-AwbtlSrubIt9mL8-jT8dSfXCMh73Y0thD1Dsw/viewform?embedded=true",
-                                  width = 640,
-                                  height = 1035,
-                                  frameborder = 0,
-                                  marginheight = 0))),
+                                  width = "100%",
+                                  height = 1200,
+                                  frameborder = 0
+                                  ))))),
            
-           theme = shinytheme("united"))
+           theme = shinytheme("united"),
+           collapsible = TRUE)
